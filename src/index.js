@@ -1,5 +1,5 @@
 require('./mystyles.scss');
-// import MyImage from './images/background_blue.jpg'
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
