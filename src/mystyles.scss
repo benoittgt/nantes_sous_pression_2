@@ -8,6 +8,14 @@
   background-size: cover;
 }
 
+.contact-form {
+  padding: 1.5rem;
+  width: 80%;
+  #message {
+    min-height: 15em;
+  }
+}
+
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 
@@ -27,5 +35,6 @@ $navbar-divider-background-color: white;
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 

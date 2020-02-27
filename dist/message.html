@@ -9,7 +9,7 @@
   </head>
   <body>
     <script src="js/bundle.js"></script>
-    <section class="hero is-fullheight bg-img-nsp is-fullwidth">
+    <section class="hero bg-img-nsp">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <header class="navbar">
@@ -28,7 +28,6 @@
                     <span class="icon">
                       <i class="fas fa-home"></i>
                     </span>
-                    <span>Contact</span>
                   </a>
                 </span>
               </div>
@@ -37,13 +36,64 @@
         </header>
       </div>
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-1 is-size-4-mobile has-text-white-ter">Nantes Sous Pression #2</h1>
-          <p class="subtitle is-5 is-size-6-mobile has-text-white-ter">Le festival nantais de la bière artisanale</p>
-          <p class="subtitle is-3 is-size-5-mobile has-text-white-ter">Du 2 au 8 Nov. 2020</p>
-          <p class="subtitle is-3 is-size-5-mobile has-text-white-ter">Final au Solilab le 7-8 Nov.</p>
+        <div class="columns">
+          <div class="column is-centered">Auto</div>
+          <div class="column is-half has-background-grey-lighter contact-form">
+            <form action="https://formspree.io/myyjjvgn" method="POST">
+              <fieldset>
+                <legend>Contact</legend>
+
+                <!-- Text input-->
+                <div class="field">
+                  <label class="label" for="name">Nom Prénom</label>
+                  <div class="control">
+                    <input id="name" name="name" type="text" placeholder="Mousse Mousse" class="input " required=true>
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="field">
+                  <label class="label" for="email">Email</label>
+                  <div class="control">
+                    <input id="email" name="email" type="text" placeholder="contact@example.com" class="input " required=true>
+                  </div>
+                </div>
+
+                <!-- Select Basic -->
+                <div class="field">
+                  <label class="label" for="i-am">I am</label>
+                  <div class="control">
+                    <div class="select">
+                      <select id="i-am" name="i-am" class="">
+                        <option>Brewery</option>
+                        <option>Partner</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="field">
+                  <label class="label" for="message">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" id="message" name="message"></textarea>
+                  </div>
+                </div>
+
+                <!-- Button -->
+                <div class="field">
+                  <label class="label" for="singlebutton-0"></label>
+                  <div class="control">
+                    <button id="singlebutton-0" name="singlebutton-0" class="button is-primary">Envoyer</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            </div>
+            <div class="column">Auto</div>
+          </div>
         </div>
-      </div>
     </section>
   </body>
 </html>
